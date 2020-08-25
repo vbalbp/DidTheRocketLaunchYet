@@ -1,0 +1,15 @@
+# This is a file holding the environment variables to configure your project.
+# feel free to change them according to your actual configuration. In order to
+# load the variables in your shell, please type `source env`. If you're using
+# PyCharm, you can use the "Env File" plugin to load this file automatically
+# into your running environment.
+
+set -a
+
+DEBUG=yes
+
+BERNARD_SETTINGS_FILE=/home/victor/dev/didtherocketlaunchyet/src/didtherocketlaunchyet/settings.py
+BERNARD_BASE_URL=https://localhost:8666
+WEBVIEW_SECRET_KEY=mG2ULg[xdlFobS1Q6xwzJ/wBX+/vE8mCHLKSKBIB4RBC_o+jzP
+
+TELEGRAM_TOKEN=1234567890:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

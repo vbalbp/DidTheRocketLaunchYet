@@ -1,0 +1,9 @@
+ERROR,Woops. Something went wrong.
+CONFUSED,Use the given buttons to answer the questions or use an available bot command. You can use /help for a list of available commands.
+WELCOME,Welcome {name}! Can you help me guess when the rocket launches in the video I will show you?
+DID_IT_LAUNCH,Did the rocket launch yet in frame {middle}?
+URL,{url}
+CONGRATULATIONS,Found! Take-off = {frame}!
+GOODBYE,Maybe next time then! Goodbye!
+YES,Yes
+NO,No
