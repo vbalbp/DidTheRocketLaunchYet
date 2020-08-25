@@ -2,7 +2,7 @@
 
 Welcome to Did the rocket launch yet!
 
-This is a very simple Telegram Bot that you can reach at [DidTheRocketLaunchYetBot](t.me/DidTheRocketLaunchYetBot).
+This is a very simple Telegram Bot that you can reach at [DidTheRocketLaunchYetBot](https://t.me/DidTheRocketLaunchYetBot).
 
 The aim of the bot is to try to figure out, with the help of a real person, at what exact frame of a video the rocket launched. By using an API that returns one frame of a video, we show the image to the user, which would then reply with either yes or no. Internally, the bot will use the [bisection algorithm](https://en.wikipedia.org/wiki/Bisection_method) to make sure it finds a solution in the minimum amount of steps possible. Please, do note that we said _a solution_ and not the correct solution because it depends on the human knowledge of the user to find the correct answer. If the person makes a mistake, so will the bot.
 
@@ -36,7 +36,7 @@ If the user answers **_no_** to the initial question, the bot doesn't start the 
 #### 6. Help
 State reached when the command **/help** is invoked. It returns a message with information about the bot and the available commands. The coded class for this state is [`S006xHelp`](/src/didtherocketlaunchyet/states.py#L170).
 ### Transitions
-Transitions are basically the lines in the diagram above, when do we decide to move from one state to the next. They are based on an origin state, a destination state and a condition that needs to be completed for the bot to move from origin to destination. The definition of these transitions can be found in [this file](/src/didtherocketlaunch/transitions.py).
+Transitions are basically the lines in the diagram above, when do we decide to move from one state to the next. They are based on an origin state, a destination state and a condition that needs to be completed for the bot to move from origin to destination. The definition of these transitions can be found in [this file](/src/didtherocketlaunchyet/transitions.py).
 ### Triggers
 Triggers are the conditions used in transitions to move from one state to the next. These triggers are not only conditionals that return boolean, but they can actually do much more in order to execute their own logic if needed. We have create a custom trigger, which you can also see in the `transitions.py` file, that is basically executing the bisection algorithm, modifying the values of `left`, `right`and `middle`according to the user input, and evaluating if the bisection algorithm has finished. You can find the definition of that trigger in [this file](/src/didtherocketlaunchyet/triggers.py).
 
