@@ -5,5 +5,6 @@ DID_IT_LAUNCH,Did the rocket launch yet in frame {middle}?
 URL,{url}
 CONGRATULATIONS,Found! Take-off = {frame}!
 GOODBYE,Maybe next time then! Goodbye!
+HELP,DidTheRocketLaunchYetBot is a bot that tries to figure out the exact frame from a video at which a rocket seen in the video takes off. Just choose between the possible yes/no button choices to help the bot figure out the answer.{new_line}{new_line}Available commands are:{new_line}/start - Starts the game{new_line}/help - Shows the description of the bot and the available commands."
 YES,Yes
 NO,No

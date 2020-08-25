@@ -142,14 +142,8 @@ USERS_READING_SPEED = 400
 N_FRAMES = getenv('N_FRAMES', 61695)
 
 # Full URL to get a frame of the video, ready to be formatted
-API_URL = getenv('API_URL', 'http://framex-dev.wadrid.net/api/video/Falcon%20Heavy%20Test%20Flight%20(Hosted%20Webcast)-wbSwFU6tY1c/frame/{}/')
-
-# Message for when the help command is invoked
-HELP_COMMAND_TEXT = getenv('HELP_COMMAND_TEXT',
-    "DidTheRocketLaunchYetBot is a bot that tries to figure out the "
-    "exact frame from a video at which a rocket seen in the video takes off. "
-    "Just choose between the possible yes/no button choices to help the bot "
-    "figure out the answer.\n\nAvailable commands are:\n/start - Starts the "
-    "game\n/help - Shows the description of the bot and the available "
-    "commands."
+API_URL = getenv(
+    'API_URL',
+    'http://framex-dev.wadrid.net/api/video/'
+    'Falcon%20Heavy%20Test%20Flight%20(Hosted%20Webcast)-wbSwFU6tY1c/frame/{}/'
 )

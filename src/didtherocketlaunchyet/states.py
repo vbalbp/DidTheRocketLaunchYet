@@ -177,5 +177,5 @@ class S006xHelp(DidTheRocketLaunchYetState):
     @page_view('/bot/help')
     async def handle(self) -> None:
         self.send(
-            lyr.RawText(settings.HELP_COMMAND_TEXT),
+            lyr.Text(t('HELP', new_line='\n')),
         )
