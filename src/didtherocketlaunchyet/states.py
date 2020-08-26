@@ -5,6 +5,9 @@ from bernard import (
 from bernard.analytics import (
     page_view,
 )
+from bernard.conf import (
+    settings
+)
 from bernard.engine import (
     BaseState,
 )
@@ -16,9 +19,6 @@ from bernard.platforms.telegram import (
 )
 from .store import (
     cs,
-)
-from bernard.conf import (
-    settings
 )
 
 
